@@ -1,21 +1,13 @@
 # Alzheimer's
 
-## An overview of commonly-occuring classes of memory-related bugs in C/C++
+An overview of commonly-occuring classes of memory-related bugs in C/C++. Following are the most frequently-occuring memory errors:
 
-Following are the most frequently-occuring memory errors:
-
-- **Memory Leaks**
-  - memory is allocated but not deallocated, causing the program to consume more and more memory over time
-- **Dangling Pointers**
-  - a pointer points to a memory location that has already been freed or deallocated
-- **Buffer Overflows**
-  - data is written to a memory buffer beyond its allocated bounds, potentially overwriting important data and causing the program to crash or behave unexpectedly
-- **Use After Free**
-  - program accesses memory that has already been freed, potentially causing a crash or memory corruption
-- **Invalid Free**
-  - program attempts to free memory that has not been dynamically allocated
-- **Double Free**
-  - program attempts to free memory that has already been freed
+- **Memory Leaks**: memory is allocated but not deallocated, causing the program to consume more and more memory over time
+- **Dangling Pointers**: a pointer to a memory location that has already been freed explicitly or by a garbage collector
+- **Buffer Overflows**: write to a memory buffer beyond its allocated bounds, causing the program to crash or behave unexpectedly
+- **Use After Free**: memory access that has already been freed, causing the program to crash or corrupt memory
+- **Invalid Free**: attempt to free memory that has not been dynamically allocated
+- **Double Free**: program attempts to free memory that has already been freed
 
 ## Usage
 
